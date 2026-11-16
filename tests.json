@@ -1,0 +1,17 @@
+[
+  {"answer": "Jack Dorsey is the CEO of Twitter.", "expect_stale": true},
+  {"answer": "Python 2.7 is the current stable version of Python.", "expect_stale": true},
+  {"answer": "Windows 10 is Microsoft's newest version of Windows.", "expect_stale": true},
+  {"answer": "The iPhone 12 is Apple's latest iPhone.", "expect_stale": true},
+  {"answer": "Boris Johnson is the Prime Minister of the United Kingdom.", "expect_stale": true},
+  {"answer": "Google's main AI chatbot is called Bard.", "expect_stale": true},
+  {"answer": "Facebook's parent company is called Facebook, Inc.", "expect_stale": true},
+  {"answer": "Angela Merkel is the Chancellor of Germany.", "expect_stale": true},
+  {"answer": "The most recent men's FIFA World Cup was held in Qatar in 2022.", "expect_stale": true},
+  {"answer": "The social media platform formerly known as Twitter is now called X.", "expect_stale": false},
+  {"answer": "ChatGPT Plus costs $20 per month.", "expect_stale": false},
+  {"answer": "Satya Nadella is the CEO of Microsoft.", "expect_stale": false},
+  {"answer": "Elon Musk is the CEO of Tesla.", "expect_stale": false},
+  {"answer": "Sundar Pichai is the CEO of Google.", "expect_stale": false},
+  {"answer": "Paris is the capital of France.", "expect_stale": false}
+]

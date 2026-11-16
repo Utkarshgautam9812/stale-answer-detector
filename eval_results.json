@@ -1,0 +1,107 @@
+[
+  {
+    "answer": "Jack Dorsey is the CEO of Twitter.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Python 2.7 is the current stable version of Python.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Windows 10 is Microsoft's newest version of Windows.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "The iPhone 12 is Apple's latest iPhone.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Boris Johnson is the Prime Minister of the United Kingdom.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Google's main AI chatbot is called Bard.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Facebook's parent company is called Facebook, Inc.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Angela Merkel is the Chancellor of Germany.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "The most recent men's FIFA World Cup was held in Qatar in 2022.",
+    "expected_stale": true,
+    "predicted_stale": true,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "The social media platform formerly known as Twitter is now called X.",
+    "expected_stale": false,
+    "predicted_stale": false,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "ChatGPT Plus costs $20 per month.",
+    "expected_stale": false,
+    "predicted_stale": false,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Satya Nadella is the CEO of Microsoft.",
+    "expected_stale": false,
+    "predicted_stale": false,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Elon Musk is the CEO of Tesla.",
+    "expected_stale": false,
+    "predicted_stale": false,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Sundar Pichai is the CEO of Google.",
+    "expected_stale": false,
+    "predicted_stale": false,
+    "correct": true,
+    "status": "ok"
+  },
+  {
+    "answer": "Paris is the capital of France.",
+    "expected_stale": false,
+    "predicted_stale": false,
+    "correct": true,
+    "status": "ok"
+  }
+]
