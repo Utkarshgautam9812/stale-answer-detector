@@ -1,12 +1,17 @@
 import streamlit as st
 from pipeline import run
-from llm import usage_log
+from llm import usage_log, simulate_outage
 
 st.set_page_config(page_title="Stale-Answer Detector", page_icon="🕒", layout="wide")
 
 st.title("🕒 Stale-Answer Detector")
 st.caption("Paste an AI-generated answer. Tavily checks each time-sensitive claim "
            "against live web sources, and Bifrost routes every model call.")
+
+simulate = st.sidebar.checkbox("Simulate primary model outage (Bifrost fallback demo)")
+simulate_outage["on"] = simulate
+if simulate:
+    st.sidebar.warning("The main model is now 'down'. Bifrost should switch to the backup.")
 
 DEFAULT = ("Twitter's CEO is Jack Dorsey, and the platform is still called Twitter. "
            "ChatGPT Plus costs $20 per month. Paris is the capital of France.")
@@ -47,8 +52,10 @@ if st.button("Check freshness", type="primary"):
                 for s in r["sources"]:
                     st.markdown(f"- [{s['title']}]({s['url']})")
 
+    fallbacks_used = sum(1 for u in usage_log if u.get("fallback_used"))
     st.sidebar.header("Bifrost gateway stats")
     st.sidebar.metric("Model calls", len(usage_log))
+    st.sidebar.metric("Fallbacks triggered", fallbacks_used)
     st.sidebar.metric("Total tokens", sum(u["tokens"] for u in usage_log))
     st.sidebar.metric("Total seconds", round(sum(u["seconds"] for u in usage_log), 1))
     st.sidebar.write("Every call below went through Bifrost:")
