@@ -14,6 +14,23 @@ Built for the Geek Room Global AI Hackathon, Problem Statement 06 (Tavily), usin
 4. **Freshness scoring:** gives each claim a 0 to 100 score, a verdict, a short reason, and a source link.
 
 Example: *"Twitter's CEO is Jack Dorsey"* is flagged **STALE (5/100)**, with a link to the source showing he resigned in 2021.
+## Screenshots
+
+**Results with live sources and freshness scores**
+
+![Results](screenshots/01-results.png)
+
+**Bifrost automatic fallback (simulated outage)**
+
+![Fallback](screenshots/02-fallback.png)
+
+**Bifrost request logs**
+
+![Bifrost logs](screenshots/03-bifrost-logs.png)
+
+**Evaluation results**
+
+![Evaluation](screenshots/04-eval.png)
 
 ## How the two technologies are used
 
